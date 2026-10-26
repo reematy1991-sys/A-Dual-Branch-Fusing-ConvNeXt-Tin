@@ -30,14 +30,14 @@ Skin cancer is among the most commonly diagnosed malignancies worldwide, and pro
    ┌───────────────────────────┐         ┌──────────────────────────────┐
    │   ConvNeXt-Tiny Backbone  │         │  Handcrafted Descriptors     │
    │  (pretrained, fine-tuned) │         │  • LBP                       │
-   │  • Large-kernel depthwise │         │  • Color Histograms (HSV/RGB)│
+   │  • Large-kernel depthwise │         │  • Color Histograms          │
    │  • Inverted bottlenecks   │         └──────────────┬───────────────┘
    │  • Layer normalization    │                        │
    └─────────────┬─────────────┘                        ▼
                  ▼                       ┌──────────────────────────────┐
    ┌───────────────────────────┐         │  Handcrafted Feature Vector  │
-   │   Deep Feature Vector     │         │        (e.g., 256-D)         │
-   │      (e.g., 768-D)        │         └──────────────┬───────────────┘
+   │   Deep Feature Vector     │         │                              │
+   │                           │         └──────────────┬───────────────┘
    └─────────────┬─────────────┘                        │
                  └──────────────────┬───────────────────┘
                                     ▼
